@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<h3 id="demo">Click button 1 to change the color of paragraph to red (getElementByID).</h3>
+
+<p>An unordered list:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<p>Click the button 2 to display the innerHTML of the second li element (getElementbyTagName).</p>
+<p id="demo2"></p>
+
+
+<button onclick="myFunction()">Button 1</button>
+<button onclick="myFunc2()"> Button 2</button>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("demo");
+        x.style.color = "red";
+    }
+    function myFunc2() {
+        var x = document.getElementsByTagName("LI");
+        document.getElementById("demo2").innerHTML = x[1].innerHTML;
+    }
+</script>
+
+</body>
+</html>
