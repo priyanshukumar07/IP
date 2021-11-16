@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Lists
+        </title>
+        <link href="link.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+        function myFunction() 
+        {
+            const myNodelist = document.querySelectorAll("li");
+            for (let i = 0; i < myNodelist.length; i++) 
+            {
+            myNodelist[i].style.color = "black";
+            }
+        }
+        function myHeading()
+        {
+            const myNodelist = document.querySelectorAll("h1");
+            for (let i = 0; i < myNodelist.length; i++)
+            {
+                myNodelist[i].style.color = "blue";
+            }
+        }
+        function myParagraph()
+        {
+            const myNodelist = document.querySelectorAll("p");
+            for (let i = 0; i < myNodelist.length; i++)
+            {
+                myNodelist[i].style.color = "pink";
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Scrambled Eggs</h1>
+        <p>Eggs are one of my favourite foods. Here is a
+            recipe for deliciously rich scrambled eggs.</p>
+        <h2>Ingredients</h2>
+        <ul class="Marker1">
+            <li style="color: blue;">2 eggs</li>
+            <li style="color: blue;">1tbs butter</li>
+            <li style="color: blue;">2tbs cream</li>
+        </ul>
+        <h2>Method</h2>
+        <ol class="Marker2">
+            <li style="color: red;">Melt butter in a frying pan over a medium
+            heat</li>
+            <li style="color: red;">Gently mix the eggs and cream in a bowl</li>
+            <li style="color: red;">Once butter has melted add cream and eggs</li>
+            <li style="color: red;">Using a spatula fold the eggs from the edge of
+                the pan to the center every 20 seconds (as if
+                you are making an omelette)</li>
+            <li style="color: red;">When the eggs are still moist remove from the
+            heat (it will continue to cook on the plate
+            until served)</li>  
+        </ol>
+        <button onclick="myFunction()">List Color</button>
+        <button onclick="myHeading()">Heading Color</button>
+        <button onclick="myParagraph()">Paragraph Color</button>
+    </body>
+</html>
