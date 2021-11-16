@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get the text of the first and last child node of the select element.</p>
+
+<select id="mySelect" size="4"><option>Audi</option><option>BMW</option><option>Saab</option><option>Volvo</option></select><br><br>
+
+<button onclick="myFunction()">First child</button>
+<button onclick="myFunction2()">Last child</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").firstChild.text;
+  document.getElementById("demo").innerHTML = x;
+}
+function myFunction2() {
+  var list = document.getElementById("mySelect").lastChild.innerHTML;
+  document.getElementById("demo").innerHTML = list;
+}
+</script>
+
+</body>
+</html>
