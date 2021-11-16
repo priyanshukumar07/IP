@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.democlass {
+  color: red;
+}
+</style>
+</head>
+<body>
+<h1 class="democlass">Hello World</h1>
+
+<p>Click the button to display the value of the class attribute of the h1 element.</p>
+
+<button onclick="myFunction()">Get attribute</button>
+
+<p id="demo"></p>
+<h2>Hello World</h2>
+
+<p>Click the button to add a class attribute with the value of "democlass" to the h1 element.</p>
+
+<button onclick="myFunction2()">Set attribute</button>
+<script>
+    function myFunction() {
+        var x = document.getElementsByTagName("H1")[0].getAttribute("class");
+        document.getElementById("demo").innerHTML = x;
+    }
+    function myFunction2() {
+        document.getElementsByTagName("H2")[0].setAttribute("class", "democlass");
+    }
+</script>
+
+</body>
+</html>
